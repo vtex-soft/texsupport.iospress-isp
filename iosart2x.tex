@@ -1,5 +1,5 @@
 % additional options: [seceqn,secthm,crcready,onecolumn]
-\documentclass{iosart2x}
+\documentclass[isp]{iosart2x}
 
 %% Packages
 \usepackage{dcolumn}
@@ -32,7 +32,7 @@
 and
 \author[B]{\inits{T.}\fnms{Third} \snm{Author}\ead[label=e3]{third@somewhere.com}}
 \runningauthor{F. Author et al.}
-\address[A]{Journal Production Department, \institution{IOS Press}, Nieuwe Hemweg 6b, 1013 BG, Amsterdam, \cny{The Netherlands}\printead[presep={\\}]{e1}}
+\address[A]{Journal Production Department, \institution{IOS Press}, Nieuwe Hemweg 6b, 1013 BG, Amsterdam, \cny{The~Netherlands}\printead[presep={\\}]{e1}}
 \address[B]{Department first, \institution{University or Company name},
 Abbreviate US states, \cny{Country}\printead[presep={\\}]{e2,e3}}
 
@@ -153,7 +153,7 @@ Use class option ``\texttt{crcready}'' in order to remove the page numbers from 
 
 Use sentence case for the title.
 
-Use \verb|\thanks{}| command for footnotes in\break \verb|\title|,
+Use \verb|\thanks{}| command for footnotes in \verb|\title|,
 \verb|\author| and \verb|\address| commands.
 
 Do not use capitals for author's surname. Add ``and'' before the last
@@ -182,7 +182,7 @@ see your system manager, or download them from \url{http://www.ctan.org}.
 
 \subsection{References}
 
-References should be collected at the end of your paper (environment
+References should be collected at the end of your paper (environment\break
 \verb|thebibliography|). References should be listed alphabetically in the style presented in the section \textbf{References} at the
 end of these instructions. Use the command \verb|\cite| to refer to the entries in the bibliography so that your
 accumulated list corresponds to the citations made in the text body.
@@ -327,7 +327,7 @@ Submit the following to the journal Editorial office, online submission form or 
 \begin{enumerate}
 \item The main \LaTeX{} document as well as other required files (eps, etc.).
 \item Identical high resolution PDF file with all fonts embedded. First produce a Postscript file from \LaTeX{}
-with DVIPS version 5.56 or higher. The option "-M" (don't make fonts) should be indicated.
+with DVIPS version 5.56 or higher. The option\break "-M" (don't make fonts) should be indicated.
 Use Adobe Acrobat Distiller and choose the job option Press-Optimized.) Please make sure you do not submit more than one version of any item.
 \end{enumerate}
 
