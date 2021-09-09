@@ -1735,6 +1735,10 @@ FUNCTION {article}
   begin.element
   author.or.editor
   format.title  "atitle" make.tag output
+  howpublished empty$
+      'skip$
+      {insert.comma howpublished output}
+  if$
   journal empty$
       'skip$
       {insert.comma journal  "jtitle" make.tag output}
@@ -1803,6 +1807,10 @@ FUNCTION {book}
       if$
     }
     {format.title output}
+  if$
+  howpublished empty$
+      'skip$
+      {insert.comma howpublished output}
   if$
   insert.comma
   series empty$
